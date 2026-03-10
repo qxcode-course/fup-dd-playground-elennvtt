@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_18-04-56",
+            "content": "@@ -41,80 +41,28 @@\n     \n-var a, b, c int%0A    fmt.Println(%22valores%22, a, b,c)%0A    fmt.Println(a+b+c\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_18-09-51",
+            "content": "@@ -92,31 +92,8 @@\n ,c)%0A\n-    fmt.Scan(&a,&b,&c)%0A\n     \n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_18-10-38",
+            "content": "@@ -69,16 +69,27 @@\n Println(\n+%22valores%22, \n a, b,c)%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-10_18-10-56",
+            "content": "@@ -53,16 +53,40 @@\n , c int%0A\n+    fmt.Println(a, b,c)%0A\n     fmt.\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-10_18-11-08",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c int\n    fmt.Scan(&a,&b,&c)\n    fmt.Println(a+b+c)\n}\n",
+            "lines": "7"
+        }
+    ]
+}
