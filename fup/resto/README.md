@@ -9,7 +9,6 @@ divisão. Ele diz o seguinte:
 
 **Teorema (Algoritmo da Divisão):** Seja ***n*** um inteiro qualquer e ***d*** um inteiro
 positivo, existe um único par de inteiros ***q*** e ***r*** com ***0 ≤ r < d*** tais que:
-
 $$n = d*q + r$$
 
 Em outras palavras, dado dois inteiros positivos, por exemplo, 115 e 15,

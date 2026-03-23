@@ -1,0 +1,17 @@
+2026-03-23 17:15:20, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-23 17:15:23, EXEC, v:1, k:fup@resto, mode:FULL, rate:0
+2026-03-23 17:40:54, EXEC, v:1, k:fup@resto, mode:FULL, rate:0
+2026-03-23 17:42:06, EXEC, v:1, k:fup@resto, mode:FULL, rate:0
+2026-03-23 17:42:24, EXEC, v:1, k:fup@resto, mode:FULL, rate:0
+2026-03-23 17:43:34, EXEC, v:1, k:fup@resto, mode:FULL, rate:0
+2026-03-23 17:44:12, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-23 17:44:29, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-23 17:44:41, EXEC, v:1, k:fup@resto, mode:FULL, rate:0
+2026-03-23 17:45:07, EXEC, v:1, k:fup@resto, mode:FULL, rate:0, size:16
+2026-03-23 17:45:33, EXEC, v:1, k:fup@resto, mode:FREE
+2026-03-23 17:50:19, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-23 17:50:29, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-23 17:50:32, EXEC, v:1, k:fup@resto, mode:FULL, rate:0
+2026-03-23 17:50:47, EXEC, v:1, k:fup@resto, mode:FULL, rate:100, size:16
+2026-03-23 17:51:07, EXEC, v:1, k:fup@resto, mode:FREE
+2026-03-23 18:01:21, MOVE, v:1, k:fup@resto, mode:BACK

@@ -9,7 +9,7 @@ func main() {
     quociente := n1 / n2
     resto := n1 % n2 
      // saida
-      fmt.Printf("%d %d\n", quociente, resto)
+      fmt.Printf("%d %d/n", quociente, resto)
       
 
 }
