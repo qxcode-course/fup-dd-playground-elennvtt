@@ -16,15 +16,15 @@ expanded:
 - fup@base
 tasks:
   sandbox@user_001: '{rate:100}'
-  fup@tres: '{self:1, rate:100, study:30, friend:Sim, Emanoel e Hanna, concept:1}'
+  fup@tres: '{self:1, rate:100, study:30, friend:Sim, concept:1}'
   fup@resto: '{self:1, rate:100, friend:nao, concept:1, code:1, debug:1}'
   fup@media: '{self:1, rate:100}'
+  fup@sobrou: '{self:1, rate:100, friend:Isabela}'
 flags:
   panel: 0
   inbox: 0
   show_panel: 0
-  tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@sobrou
+selected: fup@segundos
