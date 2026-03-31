@@ -13,6 +13,7 @@ sources:
   quests: null
   tasks: null
 expanded:
+- fup@if1
 - fup@base
 tasks:
   sandbox@user_001: '{rate:100}'
@@ -20,6 +21,9 @@ tasks:
   fup@resto: '{self:1, rate:100, friend:nao, concept:1, code:1, debug:1}'
   fup@media: '{self:1, rate:100}'
   fup@sobrou: '{self:1, rate:100, friend:Isabela}'
+  fup@segundos: '{self:1, rate:100, study:30, concept:1}'
+  fup@celsius: '{self:1, rate:100}'
+  fup@pintando: '{self:1, rate:100, concept:1}'
 flags:
   panel: 0
   inbox: 0
@@ -27,4 +31,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@segundos
+selected: fup@games

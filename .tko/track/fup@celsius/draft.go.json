@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-15-20",
+            "content": "@@ -40,176 +40,36 @@\n %0A   \n-var fahrenheit float64%0A   var celsius float64%0A   fmt.Scan(&fahrenheit)%0A   fmt.Scan(&celsius)%0A   fahrenheit = 1.8 * celsius + 32%0A   fmt.Printf(%22%25.6f%5Cn%22, fahrenheit)%0A%0A%0A   \n+ fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_17-26-58",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,19 @@\n ain() %7B%0A\n-%09\n+   \n var fahr\n@@ -59,17 +59,19 @@\n float64%0A\n-%09\n+   \n var cels\n@@ -86,20 +86,36 @@\n t64%0A\n-%09//entrada%0A%09\n+   fmt.Scan(&fahrenheit)%0A   \n fmt.\n@@ -133,20 +133,11 @@\n us)%0A\n-%09//calculo%0A%09\n+   \n fahr\n@@ -152,9 +152,11 @@\n  1.8\n-*\n+ * \n cels\n@@ -168,18 +168,11 @@\n  32%0A\n-%09//saida%0A%09\n+   \n fmt.\n@@ -201,10 +201,15 @@\n nheit)%0A%0A\n+%0A   %0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-34-01",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar fahrenheit float64\n\tvar celsius float64\n\t//entrada\n\tfmt.Scan(&celsius)\n\t//calculo\n\tfahrenheit = 1.8*celsius + 32\n\t//saida\n\tfmt.Printf(\"%.6f\\n\", fahrenheit)\n\n}\n",
+            "lines": "15"
+        }
+    ]
+}

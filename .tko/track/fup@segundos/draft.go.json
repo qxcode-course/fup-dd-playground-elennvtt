@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2026-03-30_17-27-58",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
-            "lines": "5"
+            "content": "@@ -1,47 +1,136 @@\n-package main%0A%0Aimport %22fmt%22%0A%0Afunc main() %7B%0A%09\n+@@ -6,17 +6,16 @@%0A ge main%250A%0A-%250A%0A import %2522%0A@@ -19,17 +19,16 @@%0A t %2522fmt%2522%250A%0A-%250A%0A func mai%0A@@ -37,60 +37,39 @@%0A ) %257B%250A%0A-%2509\n var \n@@ -138,18 +138,22 @@\n empo int\n-%0A%09\n+%250A%2509\n //entrad\n@@ -153,18 +153,22 @@\n /entrada\n-%0A%09\n+%250A%2509\n fmt.Scan\n@@ -179,17 +179,70 @@\n mpo)\n-%0A%09\n+%250A%2509\n //saida\n-%0A%0A%7D\n+%250A%0A+    fmt.Println(%2522Hello, World!%2522)%0A %250A%257D%250A\n %0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_16-52-42",
+            "content": "@@ -86,219 +86,13 @@\n %0A%09//\n-calculo horas%0A%09horas := tempo / 3600%0A%09//resto horas %0A%09resto := tempo %25 3600%0A%09// minutos%0A%09minutos := resto / 60%0A%09//segundos%0A%09segundos := resto %25 60%0A%0A%09// saida %0A%09fmt.Printf(%22%25d:%25d:%25d%5Cn%22, horas, minutos, segundos)%0A\n+saida\n %0A%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_17-08-24",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar tempo int\n\t//entrada\n\tfmt.Scan(&tempo)\n\t//calculo horas\n\thoras := tempo / 3600\n\t//resto horas \n\tresto := tempo % 3600\n\t// minutos\n\tminutos := resto / 60\n\t//segundos\n\tsegundos := resto % 60\n\n\t// saida \n\tfmt.Printf(\"%d:%d:%d\\n\", horas, minutos, segundos)\n\n\n}\n",
+            "lines": "22"
         }
     ]
 }
