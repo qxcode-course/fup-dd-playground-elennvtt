@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_16-55-09",
+            "content": "@@ -259,47 +259,21 @@\n qrt(\n-math.Pow(x2-x1, 2) + math.Pow(y2-y1, 2)\n+dx*dx + dy*dy\n )%0A%0A \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-04-07_17-03-17",
+            "content": "@@ -33,17 +33,16 @@\n math%22%0A)%0A\n-%0A\n func mai\n@@ -47,17 +47,19 @@\n ain() %7B%0A\n-%09\n+   \n var x1, \n@@ -78,17 +78,19 @@\n loat64%0A%0A\n-%09\n+   \n //entrda\n@@ -90,17 +90,19 @@\n /entrda%0A\n-%09\n+   \n fmt.Scan\n@@ -107,17 +107,19 @@\n an(&x1)%0A\n-%09\n+   \n fmt.Scan\n@@ -124,17 +124,19 @@\n an(&x2)%0A\n-%09\n+   \n fmt.Scan\n@@ -141,17 +141,19 @@\n an(&y1)%0A\n-%09\n+   \n fmt.Scan\n@@ -158,18 +158,74 @@\n an(&y2)%0A\n-%0A%09\n+    %0A   //diferen%C3%A7a%0A   dx := x2 - x1%0A   dy := y2 - y1%0A%0A   \n // dista\n@@ -229,17 +229,19 @@\n stancia%0A\n-%09\n+   \n distanci\n@@ -301,17 +301,19 @@\n ))%0A%0A\n-%09\n+   \n //saida%0A\n %09fmt\n@@ -308,17 +308,19 @@\n //saida%0A\n-%09\n+   \n fmt.Prin\n@@ -348,6 +348,13 @@\n a)%0A%0A\n-%7D\n+    %0A%7D%0A%0A\n %0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-04-07_17-03-45",
+            "content": "@@ -113,18 +113,18 @@\n t.Scan(&\n-y1\n+x2\n )%0A%09fmt.S\n@@ -120,34 +120,34 @@\n &x2)%0A%09fmt.Scan(&\n-x2\n+y1\n )%0A%09fmt.Scan(&y2)\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-07_17-16-40",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar x1, x2, y1, y2 float64\n\n\t//entrda\n\tfmt.Scan(&x1)\n\tfmt.Scan(&y1)\n\tfmt.Scan(&x2)\n\tfmt.Scan(&y2)\n\n\t// distancia\n\tdistancia := math.Sqrt(math.Pow(x2-x1, 2) + math.Pow(y2-y1, 2))\n\n\t//saida\n\tfmt.Printf(\"%.2f\\n\", distancia)\n\n}\n",
+            "lines": "23"
+        }
+    ]
+}

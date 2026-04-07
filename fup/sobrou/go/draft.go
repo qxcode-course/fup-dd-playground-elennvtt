@@ -7,7 +7,7 @@ func main() {
    
    //entrada
    //quantidade
-   
+   fmt.Scan(&p1)
    fmt.Scan(&p2)
    fmt.Scan(&p3)
    // valores

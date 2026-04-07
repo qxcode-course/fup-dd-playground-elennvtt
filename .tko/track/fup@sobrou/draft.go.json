@@ -27,6 +27,16 @@
         },
         {
             "label": "2026-03-30_17-23-48",
+            "content": "@@ -139,24 +139,37 @@\n antidade%0A   \n+fmt.Scan(&p1)\n %0A   fmt.Scan\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-07_17-18-08",
+            "content": "@@ -147,21 +147,8 @@\n %0A   \n-fmt.Scan(&p1)\n %0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-07_17-20-39",
             "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p1, p2, p3 float64\n    var v1, v2, v3 float64\n    var din float64\n   \n   //entrada\n   //quantidade\n   fmt.Scan(&p1)\n   fmt.Scan(&p2)\n   fmt.Scan(&p3)\n   // valores\n   fmt.Scan(&v1)\n   fmt.Scan(&v2)\n   fmt.Scan(&v3)\n   fmt.Scan(&din)\n\n   //calculo\n   v1 = v1 * p1\n   v2 = v2 * p2\n   v3 = v3 * p3\n   //saida \n var troco float64 = din - (v1 + v2 + v3)\n   fmt.Printf(\"%.2f\\n\", troco)\n}\n\n\n\n\n",
             "lines": "30"
         }

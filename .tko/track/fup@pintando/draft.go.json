@@ -7,8 +7,13 @@
         },
         {
             "label": "2026-03-31_17-57-18",
-            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var a, b, c float64\n\n    // entrada\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n    fmt.Scan(&c)\n\n    //calculo\n    s := (a+b+c) / 2\n    area := math.Sqrt(s* (s-a) * (s-b) * (s-c))\n\n    //saida\nfmt.Printf(\"%.2f\\n\", area)\n\n}\n",
+            "content": "@@ -10,36 +10,35 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09\n+import \n %22math%22%0A\n-)%0A%0A\n func\n@@ -47,17 +47,20 @@\n ain() %7B%0A\n-%09\n+    \n var a, b\n@@ -72,17 +72,20 @@\n loat64%0A%0A\n-%09\n+    \n // entra\n@@ -87,17 +87,20 @@\n entrada%0A\n-%09\n+    \n fmt.Scan\n@@ -104,17 +104,20 @@\n can(&a)%0A\n-%09\n+    \n fmt.Scan\n@@ -121,17 +121,20 @@\n can(&b)%0A\n-%09\n+    \n fmt.Scan\n@@ -139,17 +139,20 @@\n an(&c)%0A%0A\n-%09\n+    \n //calcul\n@@ -157,31 +157,33 @@\n ulo%0A\n-%09\n+    \n s := (a\n- + b + \n++b+\n c) / 2%0A\n-%09\n+    \n area\n@@ -201,50 +201,46 @@\n rt(s\n- \n * (s\n- - \n+-\n a) * (s\n- - \n+-\n b) * (s\n- - \n+-\n c))%0A%0A\n-%09\n+    \n //saida%0A\n %09fmt\n@@ -239,9 +239,8 @@\n ida%0A\n-%09\n fmt.\n",
             "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-17-43",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar a, b, c float64\n\n\t// entrada\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\tfmt.Scan(&c)\n\n\t//calculo\n\ts := (a + b + c) / 2\n\tarea := math.Sqrt(s * (s - a) * (s - b) * (s - c))\n\n\t//saida\n\tfmt.Printf(\"%.2f\\n\", area)\n\n}\n",
+            "lines": "23"
         }
     ]
 }
