@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_17-53-56",
+            "content": "@@ -358,15 +358,15 @@\n tor(arr,\n- \n %22\n+ \n %22)%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-14_17-54-24",
+            "content": "@@ -132,10 +132,8 @@\n rint\n-ln\n (sep\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-14_17-54-55",
+            "content": "package main\nimport \"fmt\"\n\nfunc vetor(arr []int, sep string){\n    for i, valor := range arr {\n        if i != 0 {\n            fmt.Println(sep)\n        }\n        fmt.Printf(\"%v\", valor)\n    }\n    fmt.Print(\"\\n\")\n}\n\nfunc main() {\n var qtd int\n    fmt.Scan(&qtd)\n    var arr []int = make([]int, qtd)\n    for i:= range arr{\n        fmt.Scan(&arr[i])\n\n    }\n    vetor(arr, \"\")\n}\n",
+            "lines": "23"
+        }
+    ]
+}

@@ -47,8 +47,33 @@
         },
         {
             "label": "2026-03-10_17-57-53",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var num1, num2 float64 //variavel \n    fmt.Scan(&num1, &num2) //lendo e escrevendo em (variaveis)\n\tfmt.Println(num1+num2) //imprimir\n    fmt.Println(num1-num2)\n    \n}\n",
+            "content": "@@ -6,16 +6,17 @@\n ge main%0A\n+%0A\n import %22\n@@ -20,16 +20,17 @@\n t %22fmt%22%0A\n+%0A\n func mai\n@@ -39,46 +39,146 @@\n ) %7B%0A\n+ \n    var \n-idades %5B%5Dint = make(%5B%5Dint, 10)%0A\n+num1, num2 float64 //variavel %0A    fmt.Scan(&num1, &num2) //lendo e escrevendo em (variaveis)%0A%09fmt.Println(num1+num2) //imprimir%0A \n    f\n@@ -192,22 +192,22 @@\n tln(\n-idades\n+num1-num2\n )%0A   \n+ \n-%0A\n %0A%7D%0A\n-  %0A\n",
             "lines": "11"
+        },
+        {
+            "label": "2026-04-14_16-59-25",
+            "content": "@@ -37,43 +37,8 @@\n ) %7B%0A\n-    var qtd int%0A    fmt.Scan(&qtd)%0A\n    v\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-14_17-00-29",
+            "content": "@@ -102,19 +102,18 @@\n (%5B%5Dint, \n-qtd\n+10\n )%0A   fmt\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-14_17-00-45",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,19 +33,20 @@\n ain() %7B%0A\n-%09//\n+    \n var qtd \n@@ -49,19 +49,20 @@\n qtd int%0A\n-%09//\n+    \n fmt.Scan\n@@ -68,19 +68,19 @@\n n(&qtd)%0A\n-%09//\n+   \n var idad\n@@ -111,11 +111,11 @@\n td)%0A\n-%09//\n+   \n fmt.\n@@ -133,153 +133,15 @@\n des)\n- \n %0A   \n- arr := %5B%5Dint%7B9,8,4,5,6,8,3%7D%0A    fmt.Println(%22%5B%22)%0A    for _, valor := range arr %7B%0A        fmt.Printf(%22%25d%22, valor)%0A%0A    %7D%0A    fmt.Print(%22%5D%5Cn%22)%0A%7D\n+%0A%0A%7D%0A  \n %0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-14_17-15-59",
+            "content": "@@ -176,16 +176,18 @@\n mt.Print\n+ln\n (%22%5B%22)%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-16-30",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\t//var qtd int\n\t//fmt.Scan(&qtd)\n\t//var idades []int = make([]int, qtd)\n\t//fmt.Println(idades) \n    arr := []int{9,8,4,5,6,8,3}\n    fmt.Print(\"[\")\n    for _, valor := range arr {\n        fmt.Printf(\"%d\", valor)\n\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "lines": "17"
         }
     ]
 }

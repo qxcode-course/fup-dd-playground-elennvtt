@@ -22,25 +22,14 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@if1
-- fup@for1
-- fup@str2
-- fup@str1
-- fup@base
-- fup@rec
-- fup@if_extra
-- fup@dict
-- fup@struct
-- fup@for2
-- fup@str_extra
-- fup@if2
-- fup@games
 - eval1@teste-1
-- fup@list1
+- fup@dict
+- fup@list
+- fup@games
 - fup@mat
-- fup@list_extra
-- fup@for_extra
-- fup@list2
+- fup@struct
+- sandbox@sandbox
+- fup@rec
 flags:
   inbox: all
   panel: help
@@ -48,4 +37,4 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: eval1@mumia
+selected: fup@vet_i
