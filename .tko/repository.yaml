@@ -22,14 +22,12 @@ sources:
   quests: null
   tasks: null
 expanded:
-- eval1@teste-1
-- fup@dict
-- fup@list
-- fup@games
-- fup@mat
 - fup@struct
-- sandbox@sandbox
+- fup@mat
+- fup@dict
+- fup@games
 - fup@rec
+- fup@if1
 flags:
   inbox: all
   panel: help
@@ -37,4 +35,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@vet_i
+selected: fup@calc
+selected_index: 8

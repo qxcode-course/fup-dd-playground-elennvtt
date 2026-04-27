@@ -1,5 +1,16 @@
 package main
-import "fmt"
+
+import (
+	"fmt"
+	"math"
+)
+
 func main() {
-    fmt.Println("Hello, World!")
+	var n1, n2 float64
+	fmt.Scan(&n1)
+	fmt.Scan(&n2)
+
+	maior := math.Max(n1, n2)
+
+	fmt.Println(maior)
 }

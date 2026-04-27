@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_02-23-21",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var n1 i\n@@ -48,17 +48,20 @@\n  n1 int%0A\n-%09\n+    \n fmt.Scan\n@@ -66,17 +66,20 @@\n an(&n1)%0A\n-%09\n+    \n if n1 %3E=\n@@ -87,23 +87,31 @@\n 0 %7B%0A\n-%09%09\n+        \n print\n+ln\n (%22SIM%22)%0A\n %0A%09%7D \n@@ -110,21 +110,36 @@\n M%22)%0A\n-%0A%09%7D \n+        %0A    %7D\n else\n- \n %7B%0A\n-%09%09\n+        \n fmt.\n@@ -147,16 +147,18 @@\n rint\n+ln\n (%22NAO%22)%0A\n %09%7D%0A%7D\n@@ -157,9 +157,12 @@\n O%22)%0A\n-%09\n+    \n %7D%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-27_02-24-11",
+            "content": "@@ -74,29 +74,25 @@\n n1 %3E= 0 %7B%0A%09%09\n-fmt.P\n+p\n rint(%22SIM%22)%0A\n@@ -128,11 +128,6 @@\n %0A%09%7D%0A\n-    %0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-27_02-28-08",
+            "content": "@@ -87,18 +87,16 @@\n mt.Print\n-ln\n (%22SIM%22)%0A\n@@ -121,10 +121,8 @@\n rint\n-ln\n (%22NA\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-27_02-28-27",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n1 int\n\tfmt.Scan(&n1)\n\tif n1 >= 0 {\n\t\tfmt.Println(\"SIM\")\n\n\t} else {\n\t\tfmt.Println(\"NAO\")\n\t}\n    \n}\n",
+            "lines": "15"
+        }
+    ]
+}

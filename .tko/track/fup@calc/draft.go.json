@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_02-50-32",
+            "content": "@@ -132,14 +132,10 @@\n )%0A%0A%09\n-switch\n+if\n  ope\n@@ -146,17 +146,18 @@\n r == '+'\n-:\n+ %7B\n %0A%09%09fmt.P\n@@ -166,28 +166,34 @@\n ntln(a + b)%0A\n-case\n+%09%7D else if\n  operador ==\n@@ -196,17 +196,18 @@\n r == '-'\n-:\n+ %7B\n %0A%09%09fmt.P\n@@ -216,28 +216,34 @@\n ntln(a - b)%0A\n-case\n+%09%7D else if\n  operador ==\n@@ -246,17 +246,18 @@\n r == '*'\n-:\n+ %7B\n %0A%09%09fmt.P\n@@ -274,12 +274,18 @@\n  b)%0A\n-case\n+%09%7D else if\n  ope\n@@ -300,9 +300,10 @@\n  '/'\n-:\n+ %7B\n %0A%09%09f\n@@ -324,11 +324,10 @@\n  b)%0A%09%7D%0A%0A\n-%0A\n %7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-27_02-57-52",
+            "content": "@@ -150,17 +150,17 @@\n r == '+'\n-%7B\n+:\n %0A%09%09fmt.P\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-27_02-58-41",
+            "content": "@@ -147,167 +147,148 @@\n ador\n-%7B%0A    case '+':%0A        fmt.Println(a + b)%0A        case '-':%0A        fmt.Println(a - b)%0A        case '*':%0A        fmt.Println(a * b)%0A        case '/':%0A        \n+ == '+'%7B%0A%09%09fmt.Println(a + b)%0Acase operador == '-':%0A%09%09fmt.Println(a - b)%0Acase operador == '*':%0A%09%09fmt.Println(a * b)%0Acase operador == '/':%0A%09%09\n fmt.\n@@ -302,16 +302,15 @@\n (a / b)%0A\n-%0A\n %09%7D%0A%0A%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-27_03-04-12",
+            "content": "@@ -67,14 +67,12 @@\n dor \n-string\n+rune\n %0A%0A%09f\n@@ -158,11 +158,11 @@\n ase \n-%22+%22\n+'+'\n :%0A  \n@@ -203,11 +203,11 @@\n ase \n-%22-%22\n+'-'\n :%0A  \n@@ -248,11 +248,11 @@\n ase \n-%22*%22\n+'*'\n :%0A  \n@@ -293,11 +293,11 @@\n ase \n-%22/%22\n+'/'\n :%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-27_03-08-26",
+            "content": "@@ -108,17 +108,25 @@\n fmt.Scan\n-(\n+f(%22 %25c%22, \n &operado\n@@ -131,35 +131,8 @@\n dor)\n-%0A    %0A    var resultado int\n %0A%0A%09s\n@@ -327,91 +327,11 @@\n  b)%0A\n-        default: fmt.Println(%22ERROR%22)%0A        return%0A%0A%09%7D%0A    fmt.Println(resultado)\n+%0A%09%7D\n %0A%0A%0A%7D\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-27_03-11-06",
+            "content": "@@ -359,25 +359,16 @@\n efault: \n-%0A        \n fmt.Prin\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-04-27_03-11-29",
+            "content": "@@ -188,28 +188,27 @@\n         \n-resultado = \n+fmt.Println\n (a + b)%0A\n@@ -233,27 +233,27 @@\n         \n-resultado =\n+fmt.Println\n (a - b)%0A\n@@ -278,28 +278,27 @@\n         \n-resultado = \n+fmt.Println\n (a * b)%0A\n@@ -327,20 +327,19 @@\n     \n-resultado = \n+fmt.Println\n (a /\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-04-27_03-12-47",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b int\n\tvar operador string\n\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\tfmt.Scan(&operador)\n    \n    var resultado int\n\n\tswitch operador{\n    case \"+\":\n        resultado = (a + b)\n        case \"-\":\n        resultado =(a - b)\n        case \"*\":\n        resultado = (a * b)\n        case \"/\":\n        resultado = (a / b)\n        default: \n        fmt.Println(\"ERROR\")\n        return\n\n\t}\n    fmt.Println(resultado)\n\n\n}\n",
+            "lines": "32"
+        }
+    ]
+}

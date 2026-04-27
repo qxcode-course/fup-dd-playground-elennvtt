@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_02-34-37",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num int\n    fmt.Scan(&num)\n\n    if num % 7 == 0 {\n        fmt.Println(\"SIM\")\n    }else {\n        fmt.Println(\"NAO\")\n    }\n}\n",
+            "lines": "12"
+        }
+    ]
+}

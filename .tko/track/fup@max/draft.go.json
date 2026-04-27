@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_02-05-20",
+            "content": "@@ -109,16 +109,103 @@\n n2)%0A%0A   \n+ if n1%3En2 %7B%0A        fmt.Println(n1)%0A    %7D else %7B%0A        fmt.Println(n2)%0A        %0A    %7D\n %0A    mai\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-27_02-06-31",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var n1,n2 float64\n    fmt.Scan(&n1)\n    fmt.Scan(&n2)\n\n   \n    maior := math.Max(n1,n2)\n\n    fmt.Println(maior)\n}\n",
+            "lines": "16"
+        }
+    ]
+}
