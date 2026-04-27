@@ -7,7 +7,12 @@
         },
         {
             "label": "2026-04-27_02-06-31",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var n1,n2 float64\n    fmt.Scan(&n1)\n    fmt.Scan(&n2)\n\n   \n    maior := math.Max(n1,n2)\n\n    fmt.Println(maior)\n}\n",
+            "content": "@@ -33,17 +33,16 @@\n math%22%0A)%0A\n-%0A\n func mai\n@@ -51,17 +51,19 @@\n ) %7B%0A\n-%09\n+    \n var n1,\n- \n n2 f\n@@ -69,17 +69,20 @@\n float64%0A\n-%09\n+    \n fmt.Scan\n@@ -87,17 +87,20 @@\n an(&n1)%0A\n-%09\n+    \n fmt.Scan\n@@ -106,17 +106,24 @@\n n(&n2)%0A%0A\n-%09\n+   %0A    \n maior :=\n@@ -139,15 +139,17 @@\n (n1,\n- \n n2)%0A%0A\n-%09\n+    \n fmt.\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-27_16-53-57",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar n1, n2 float64\n\tfmt.Scan(&n1)\n\tfmt.Scan(&n2)\n\n\tmaior := math.Max(n1, n2)\n\n\tfmt.Println(maior)\n}\n",
             "lines": "16"
         }
     ]

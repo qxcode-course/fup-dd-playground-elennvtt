@@ -7,8 +7,13 @@
         },
         {
             "label": "2026-04-27_02-15-32",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n\n    if a == 3 || a == 5{\n        fmt.Println(\"SIM\")\n    } else {\n        fmt.Println(\"NAO\")\n    }\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var a in\n@@ -47,17 +47,20 @@\n r a int%0A\n-%09\n+    \n fmt.Scan\n@@ -65,17 +65,20 @@\n an(&a)%0A%0A\n-%09\n+    \n if a == \n@@ -88,21 +88,26 @@\n %7C a == 5\n- \n %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -117,17 +117,20 @@\n (%22SIM%22)%0A\n-%09\n+    \n %7D else %7B\n@@ -134,10 +134,16 @@\n e %7B%0A\n-%09%09\n+        \n fmt.\n@@ -161,9 +161,12 @@\n O%22)%0A\n-%09\n+    \n %7D%0A%7D%0A\n",
             "lines": "12"
+        },
+        {
+            "label": "2026-04-27_16-54-03",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a int\n\tfmt.Scan(&a)\n\n\tif a == 3 || a == 5 {\n\t\tfmt.Println(\"SIM\")\n\t} else {\n\t\tfmt.Println(\"NAO\")\n\t}\n}\n",
+            "lines": "14"
         }
     ]
 }
