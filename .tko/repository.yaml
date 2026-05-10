@@ -22,28 +22,28 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@for2
-- fup@if_extra
-- fup@games
 - fup@rec
 - fup@base
+- fup@for2
+- fup@if_extra
 - fup@list
-- fup@for1
+- fup@games
 - fup@mat
+- fup@if1
+- sandbox@sandbox
 - fup@for_extra
 - eval1@eval1
 - fup@if2
 - fup@struct
-- fup@dict
+- fup@for1
 - fup@string
-- sandbox@sandbox
-- fup@if1
+- fup@dict
 flags:
   inbox: all
-  panel: skills
-  show_panel: 'true'
+  panel: help
+  show_panel: 'false'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@jokenpo
-selected_index: 30
+selected: fup@varetas
+selected_index: 34

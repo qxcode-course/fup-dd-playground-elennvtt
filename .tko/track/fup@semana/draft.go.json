@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_04-14-49",
+            "content": "@@ -184,17 +184,16 @@\n & hora %3C\n-=\n  11) %7C%7C \n@@ -301,17 +301,16 @@\n & hora %3C\n-=\n  11 %7B%0A%09%09\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-10_04-19-57",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar dia, hora int\n\n\tfmt.Scan(&dia)\n\tfmt.Scan(&hora)\n\n\ttrabalhando := false\n\n\t// Segunda a sexta\n\tif dia >= 2 && dia <= 6 {\n\t\tif (hora >= 8 && hora <= 11) || (hora >= 14 && hora <= 17) {\n\t\t\ttrabalhando = true\n\t\t}\n\t}\n\n\t// S\u00e1bado\n\tif dia == 7 {\n\t\tif hora >= 8 && hora <= 11 {\n\t\t\ttrabalhando = true\n\t\t}\n\t}\n\n\tif trabalhando {\n\t\tfmt.Println(\"SIM\")\n\t} else {\n\t\tfmt.Println(\"NAO\")\n\t}\n}\n",
+            "lines": "32"
+        }
+    ]
+}

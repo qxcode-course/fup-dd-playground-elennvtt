@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_03-59-53",
+            "content": "@@ -54,25 +54,25 @@\n  nota2, nota\n-f\n+F\n inal int%0A%0A%09f\n@@ -116,25 +116,25 @@\n t.Scan(&nota\n-f\n+F\n inal)%0A%0A%09medi\n@@ -271,25 +271,25 @@\n lse %7B%0A%09%09nova\n-m\n+M\n edia := (med\n@@ -305,17 +305,17 @@\n t64(nota\n-f\n+F\n inal)) /\n@@ -329,17 +329,17 @@\n %09if nova\n-m\n+M\n edia %3E= \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-10_04-00-45",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar nota1, nota2, notafinal int\n\n\tfmt.Scan(&nota1)\n\tfmt.Scan(&nota2)\n\tfmt.Scan(&notafinal)\n\n\tmedia := float64(nota1+nota2) / 2.0\n\n\tif media >= 7 {\n\t\tfmt.Println(\"aprovado\")\n\t} else if media < 4 {\n\t\tfmt.Println(\"reprovado\")\n\t} else {\n\t\tnovamedia := (media + float64(notafinal)) / 2.0\n\n\t\tif novamedia >= 5 {\n\t\t\tfmt.Println(\"aprovado na final\")\n\t\t} else {\n\t\t\tfmt.Println(\"reprovado na final\")\n\t\t}\n\t}\n}\n",
+            "lines": "27"
+        }
+    ]
+}
