@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_02-34-23",
+            "content": "@@ -152,21 +152,8 @@\n tln(\n-nome + %22eh%22+ \n %22cri\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-10_02-35-32",
+            "content": "@@ -159,17 +159,16 @@\n e + %22eh%22\n- \n + %22crian\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-10_02-35-42",
+            "content": "@@ -156,17 +156,15 @@\n nome\n-,\n  + %22eh%22\n-,\n  + %22\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-10_02-35-59",
+            "content": "@@ -156,15 +156,17 @@\n nome\n+,\n  + %22eh%22\n+,\n  + %22\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-10_02-36-11",
+            "content": "@@ -160,21 +160,10 @@\n  + %22\n- %22 + %22eh%22+ %22 \n+eh\n %22 + \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-10_02-37-39",
+            "content": "@@ -231,32 +231,8 @@\n tln(\n-nome + %22 %22 + %22eh%22+ %22 %22 +\n %22jov\n@@ -284,32 +284,8 @@\n tln(\n-nome + %22 %22 + %22eh%22+ %22 %22 +\n %22adu\n@@ -340,32 +340,8 @@\n tln(\n-nome + %22 %22 + %22eh%22+ %22 %22 +\n %22ido\n@@ -380,32 +380,8 @@\n tln(\n-nome + %22 %22 + %22eh%22+ %22 %22 +\n %22mum\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-10_02-38-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nome string\n    var num int\n\n    fmt.Scan(&nome)\n    fmt.Scan(&num)\n\n    if num < 12 {\n        fmt.Println(nome + \" \" + \"eh\"+ \" \" + \"crianca\")\n    }else if num <18 {\n        fmt.Println(nome + \" \" + \"eh\"+ \" \" +\"jovem\")\n    }else if num < 65 {\n        fmt.Println(nome + \" \" + \"eh\"+ \" \" +\"adulto\")\n    }else if num < 1000 {\n        fmt.Println(nome + \" \" + \"eh\"+ \" \" +\"idoso\")\n    }else{\n        fmt.Println(nome + \" \" + \"eh\"+ \" \" +\"mumia\")\n    }\n}\n",
+            "lines": "21"
+        }
+    ]
+}

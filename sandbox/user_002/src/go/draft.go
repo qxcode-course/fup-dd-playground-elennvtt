@@ -37,12 +37,14 @@ func separar_figurinhas(montante []int) ([]int, []int) { //tupla
 	repet := make([]int, 0, len(montante))
 	for _, fig := range montante {
 		if !contains(album, fig) {
+			album = append(album, fig)
 		} else {
 			repet = append(repet, fig)
 		}
 	}
 	return album, repet
 }
+
 func main() {
 	var montante []int = make([]int, 0, 1)
 	fmt.Println(montante, len(montante), cap(montante))

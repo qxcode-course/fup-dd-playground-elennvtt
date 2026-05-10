@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2026-04-27_17-28-23",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -36,291 +36,40 @@\n () %7B\n- %0A%09var wifi, login, adm int%0A%0A%09fmt.Scan(&wifi, &login, &adm)%0A%0A%09if wifi == 0 %7B%0A%09%09fmt.Println(%22you must connect to wifi%22)%0A%09%7D else if login == 0%7B%0A%09%09fmt.Println(%22you need to login first%22)%0A%09%7D else if adm == 0%7B%0A%09%09fmt.Println(%22you must login as admin%22)%0A%09%7D else%7B%0A%09%09fmt.Println(%22done%22)%0A%09%7D%0A%0A    \n+%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-10_00-39-50",
+            "content": "@@ -55,18 +55,16 @@\n gin, adm\n-in\n  int%0A%0A%09f\n@@ -90,18 +90,16 @@\n in, &adm\n-in\n )%0A%0A%09if w\n@@ -229,18 +229,16 @@\n e if adm\n-in\n  == 0%7B%0A%09\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-10_00-42-21",
+            "content": "@@ -266,19 +266,16 @@\n ou must \n-to \n login as\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-10_00-43-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() { \n\tvar wifi, login, admin int\n\n\tfmt.Scan(&wifi, &login, &admin)\n\n\tif wifi == 0 {\n\t\tfmt.Println(\"you must connect to wifi\")\n\t} else if login == 0{\n\t\tfmt.Println(\"you need to login first\")\n\t} else if admin == 0{\n\t\tfmt.Println(\"you must to login as admin\")\n\t} else{\n\t\tfmt.Println(\"done\")\n\t}\n\n    \n}\n",
+            "lines": "19"
         }
     ]
 }

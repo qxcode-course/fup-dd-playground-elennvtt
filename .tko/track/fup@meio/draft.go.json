@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_02-49-17",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,19 @@\n ain() %7B%0A\n-%09\n+   \n var num1\n@@ -61,17 +61,19 @@\n um3 int%0A\n-%09\n+   \n fmt.Scan\n@@ -82,17 +82,19 @@\n (&num1)%0A\n-%09\n+   \n fmt.Scan\n@@ -103,17 +103,19 @@\n (&num2)%0A\n-%09\n+   \n fmt.Scan\n@@ -129,231 +129,65 @@\n 3)%0A%0A\n-%09var mediano int%0A%09\n+   \n if \n-(\n num1 \n-%3E\n+!=\n  num2\n- && num1 %3C num3)\n  %7C%7C \n-(\n num1 \n-%3E num3 && num1 %3C num2) %7B%0A%09%09mediano = num1%0A%09%7D else if (num2 %3E num1 && num2 %3C num3)\n+!= num3\n  %7C%7C \n-(\n num2 \n-%3E\n+!=\n  num3 \n-&& num2 %3C num1) %7B%0A%09%09mediano = num2%0A%09%7D else %7B%0A%09%09mediano = num3%0A%09%7D%0A%09\n+%7B%0A    \n fmt.\n@@ -198,15 +198,17 @@\n tln(\n-mediano)\n+num2)%0A   %7D\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-10_03-03-24",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar num1, num2, num3 int\n\tfmt.Scanln(&num1)\n\tfmt.Scanln(&num2)\n\tfmt.Scanln(&num3)\n\n\tvar mediano int\n\tif (num1 > num2 && num1 < num3) || (num1 > num3 && num1 < num2) {\n\t\tmediano = num1\n\t} else if (num2 > num1 && num2 < num3) || (num2 > num3 && num2 < num1) {\n\t\tmediano = num2\n\t} else {\n\t\tmediano = num3\n\t}\n\tfmt.Println(mediano)\n}\n",
+            "lines": "20"
+        }
+    ]
+}

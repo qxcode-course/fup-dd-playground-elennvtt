@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_02-05-03",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var P, D1, D2 int\n    fmt.Scan(&P, &D1, &D2)\n    soma := D1+D2\n     if soma%2 == 0 {\n        if P ==0 {\n            fmt.Println(\"0\")\n        }else{\n            fmt.Println(\"1\")\n        }\n     }else{\n        if P == 0 {\n            fmt.Println(\"1\")\n        }else{\n            fmt.Println(\"0\")\n        }\n     }\n}\n",
+            "lines": "20"
+        }
+    ]
+}

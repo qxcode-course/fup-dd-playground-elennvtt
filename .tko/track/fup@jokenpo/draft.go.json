@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_03-25-44",
+            "content": "@@ -109,81 +109,8 @@\n 2)%0A%0A\n-    if jog1 == jog2%7B%0A        fmt.Println(%22empate%22)%0A        return%0A    %7D%0A%0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-10_03-26-57",
+            "content": "@@ -195,17 +195,17 @@\n og1 == %22\n-R\n+P\n %22 && jog\n@@ -210,17 +210,17 @@\n og2 == %22\n-S\n+R\n %22 ) %7C%7C (\n@@ -228,17 +228,17 @@\n og1 == %22\n-S\n+R\n %22 && jog\n@@ -243,17 +243,16 @@\n og2 == %22\n-P\n %22 ) %7C%7C (\n@@ -271,25 +271,25 @@\n && jog2 == %22\n-R\n+S\n %22 ) %7B%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-10_03-28-30",
+            "content": "@@ -217,21 +217,16 @@\n %22S%22 ) %7C%7C\n-%0A    \n  (jog1 =\n@@ -251,22 +251,16 @@\n P%22 ) %7C%7C \n-%0A     \n (jog1 ==\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-10_03-29-11",
+            "content": "@@ -315,17 +315,17 @@\n rintln(%22\n-j\n+J\n og1%22)%0A  \n@@ -354,17 +354,17 @@\n rintln(%22\n-j\n+J\n og2%22)%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-10_03-31-08",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var jog1, jog2 string\n\n    fmt.Scanln(&jog1)\n    fmt.Scanln(&jog2)\n\n    if jog1 == jog2{\n        fmt.Println(\"empate\")\n        return\n    }\n\n    if (jog1 == \"R\" && jog2 == \"S\" ) ||\n     (jog1 == \"S\" && jog2 == \"P\" ) || \n     (jog1 == \"P\" && jog2 == \"R\" ) {\n        fmt.Println(\"jog1\")\n    }else{\n        fmt.Println(\"jog2\")\n    }\n}\n",
+            "lines": "21"
+        }
+    ]
+}
