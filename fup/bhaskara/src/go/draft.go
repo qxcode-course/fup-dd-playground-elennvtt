@@ -11,15 +11,14 @@ func main() {
     fmt.Scanln(&c)
 
     delta := b*b - 4*a*c
-
-    if delta > 0 {
-        x1 := (-b + math.Sqrt(delta)) / (2*a)
+     x1 := (-b + math.Sqrt(delta)) / (2*a)
         x2 := (-b - math.Sqrt(delta)) / (2*a)
+    if delta > 0 {
+       
         fmt.Printf("%.2f\n", x1)
         fmt.Printf("%.2f\n", x2)
     }else if delta == 0{
-        x := -b / (2*a)
-        fmt.Printf("%.2f\n", x)
+        fmt.Printf("%.2f\n", x1)
     }else {
         fmt.Println("nao ha raiz real")
     }

@@ -47,8 +47,18 @@
         },
         {
             "label": "2026-05-11_05-24-59",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var B, T int\n    fmt.Scanln(&B)\n    fmt.Scanln(&T)\n\n    if B+T < 160 {\n        fmt.Println(\"1\")\n    } else if B+T > 160{\n        fmt.Println(\"2\")\n    }else{\n        fmt.Println(\"0\")\n    }\n}\n",
+            "content": "@@ -101,11 +101,9 @@\n if B\n- + \n++\n T %3C \n",
             "lines": "15"
+        },
+        {
+            "label": "2026-05-11_16-56-17",
+            "content": "@@ -54,20 +54,8 @@\n int%0A\n-    h := 70%0A\n     \n@@ -66,93 +66,53 @@\n Scan\n+ln\n (&B\n-, &T\n )%0A    \n-area := ((B+T) * h) / 2%0A    areat := 70 * 160%0A    if area %3E areat - area\n+fmt.Scanln(&T)%0A%0A    if B + T %3C 160\n  %7B%0A \n@@ -153,27 +153,17 @@\n  if \n-area %3C areat - area\n+B+T %3E 160\n %7B%0A  \n@@ -198,32 +198,8 @@\n else\n- if area == areat - area\n %7B%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-11_17-07-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var B, T int\n    h := 70\n    fmt.Scan(&B, &T)\n    area := ((B+T) * h) / 2\n    areat := 70 * 160\n    if area > areat - area {\n        fmt.Println(\"1\")\n    } else if area < areat - area{\n        fmt.Println(\"2\")\n    }else if area == areat - area{\n        fmt.Println(\"0\")\n    }\n}\n",
+            "lines": "16"
         }
     ]
 }

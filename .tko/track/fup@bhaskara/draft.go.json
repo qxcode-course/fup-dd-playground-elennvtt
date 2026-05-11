@@ -47,8 +47,18 @@
         },
         {
             "label": "2026-05-11_05-06-49",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var a, b, c float64\n    fmt.Scanln(&a)\n    fmt.Scanln(&b)\n    fmt.Scanln(&c)\n\n    delta := b*b - 4*a*c\n\n    if delta > 0 {\n        x1 := (-b + math.Sqrt(delta)) / (2*a)\n        x2 := (-b - math.Sqrt(delta)) / (2*a)\n        fmt.Printf(\"%.2f\\n\", x1)\n        fmt.Printf(\"%.2f\\n\", x2)\n    }else if delta == 0{\n        x := -b / (2*a)\n        fmt.Printf(\"%.2f\\n\", x)\n    }else {\n        fmt.Println(\"nao ha raiz real\")\n    }\n}\n",
+            "content": "@@ -357,16 +357,40 @@\n a == 0%7B%0A\n+        x := -b / (2*a)%0A\n         \n@@ -407,25 +407,24 @@\n (%22%25.2f%5Cn%22, x\n-1\n )%0A    %7Delse \n",
             "lines": "26"
+        },
+        {
+            "label": "2026-05-11_16-53-12",
+            "content": "@@ -154,16 +154,39 @@\n - 4*a*c%0A\n+%0A    if delta %3E 0 %7B%0A   \n      x1 \n@@ -270,35 +270,8 @@\n *a)%0A\n-    if delta %3E 0 %7B%0A       %0A\n     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-11_16-54-00",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var a, b, c float64\n    fmt.Scanln(&a)\n    fmt.Scanln(&b)\n    fmt.Scanln(&c)\n\n    delta := b*b - 4*a*c\n     x1 := (-b + math.Sqrt(delta)) / (2*a)\n        x2 := (-b - math.Sqrt(delta)) / (2*a)\n    if delta > 0 {\n       \n        fmt.Printf(\"%.2f\\n\", x1)\n        fmt.Printf(\"%.2f\\n\", x2)\n    }else if delta == 0{\n        fmt.Printf(\"%.2f\\n\", x1)\n    }else {\n        fmt.Println(\"nao ha raiz real\")\n    }\n}\n",
+            "lines": "25"
         }
     ]
 }
