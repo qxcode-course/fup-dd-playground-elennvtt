@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_16-54-51",
+            "content": "@@ -41,353 +41,35 @@\n     \n-  var N,X,Y int%0A      var C string%0A      var S int%0A      fmt.Scan(&N)%0A      fmt.Scan(&X,&Y)%0A      fmt.Scan(&C)%0A      fmt.Scan(&S)%0A      if C == %22U%22 %7B%0A        Y = (Y - S%25N + N %25) N%0A      %7Delse if C== %22D%22%7B%0A        Y = (Y+S) %25N%0A      %7Delse if C== %22L%22%7B%0A        X=(X - S%25N + N %25N)%0A      %7Delse %7B%0A        X=(X+S) %25N%0A      %7D%0A      fmt.Println(X,Y)%0A      \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-12_17-50-53",
+            "content": "@@ -211,19 +211,20 @@\n  S%25N + N\n+ %25\n ) \n-%25\n N%0A      \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-12_17-51-07",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n      var N,X,Y int\n      var C string\n      var S int\n      fmt.Scan(&N)\n      fmt.Scan(&X,&Y)\n      fmt.Scan(&C)\n      fmt.Scan(&S)\n      if C == \"U\" {\n        Y = (Y - S%N + N) %N\n      }else if C== \"D\"{\n        Y = (Y+S) %N\n      }else if C== \"L\"{\n        X=(X - S%N + N %N)\n      }else {\n        X=(X+S) %N\n      }\n      fmt.Println(X,Y)\n      \n}\n",
+            "lines": "22"
+        }
+    ]
+}
