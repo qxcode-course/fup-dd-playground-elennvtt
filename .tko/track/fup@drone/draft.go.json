@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_14-04-02",
+            "content": "@@ -96,24 +96,25 @@\n %0A    if area\n+ \n j %3E=a*b %7C%7C a\n@@ -116,16 +116,17 @@\n  %7C%7C area\n+ \n j %3E=a*c \n@@ -136,15 +136,15 @@\n area\n+ \n j%3E=b*c\n- \n %7B%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-12_14-04-27",
+            "content": "@@ -92,20 +92,8 @@\n &l)%0A\n-    areaj:=h\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-12_14-05-38",
+            "content": "@@ -104,10 +104,8 @@\n j:=h\n-*1\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-12_14-06-02",
+            "content": "@@ -101,17 +101,17 @@\n reaj:=h*\n-l\n+1\n %0A    if \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-12_14-06-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a,b,c,h,l int\n    fmt.Scan(&a, &b, &c, &h, &l)\n    areaj:=h*l\n    if areaj >=a*b || areaj >=a*c || areaj>=b*c {\n        fmt.Println(\"S\")\n    }else{\n        fmt.Println(\"N\")\n    }\n\n}\n",
+            "lines": "13"
+        }
+    ]
+}

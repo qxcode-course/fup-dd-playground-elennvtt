@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_14-17-16",
+            "content": "@@ -103,10 +103,8 @@\n  if \n-a%25\n (c-1\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-12_14-18-29",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c,a int\n    fmt.Scan(&c,&a)\n    viagem := a/ (c-1)\n    if a%(c-1) !=0{\n        viagem++\n    }\n    fmt.Println(viagem)\n}\n",
+            "lines": "11"
+        }
+    ]
+}

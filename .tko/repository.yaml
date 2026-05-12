@@ -22,22 +22,21 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@rec
-- fup@struct
-- fup@for_extra
-- fup@string
-- sandbox@sandbox
-- fup@list
-- fup@if2
-- fup@if_extra
-- fup@dict
-- fup@for2
-- fup@mat
-- eval1@eval1
 - fup@for1
 - fup@if1
-- fup@base
+- eval1@eval1
+- fup@rec
+- fup@if2
+- fup@mat
+- fup@string
+- fup@for_extra
+- fup@dict
+- fup@if_extra
 - fup@games
+- fup@list
+- fup@base
+- sandbox@sandbox
+- fup@struct
 flags:
   inbox: all
   panel: graph
@@ -45,5 +44,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@monica
-selected_index: 37
+selected: fup@cobra
+selected_index: 41
