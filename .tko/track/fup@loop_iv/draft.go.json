@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_17-36-23",
+            "content": "@@ -107,16 +107,17 @@\n    for ;\n+ \n a%3Eb;a--%7B\n@@ -135,30 +135,24 @@\n t.Printf\n-(\n+%7B\n %22%25d%22, a\n-)%0A    \n %7D%0A    %7De\n@@ -252,8 +252,10 @@\n (%22%5D%22)%0A%7D%0A\n+%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-18_17-38-12",
+            "content": "@@ -98,11 +98,9 @@\n if a\n- %3E \n+%3E\n b%7B%0A \n@@ -110,26 +110,16 @@\n for \n-i := a; i%3E= b; i++\n+;a%3Eb;a--\n %7B%0A  \n@@ -137,25 +137,25 @@\n rintf(%22%25d%22, \n-i\n+a\n )%0A    %7D%0A    \n@@ -178,22 +178,16 @@\n for \n-i :=a; i%3C=b; i\n+; a%3Cb ;a\n ++%7B%0A\n@@ -215,17 +215,17 @@\n f(%22%25d%22, \n-i\n+a\n )%0A      \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-18_17-45-21",
+            "content": "@@ -142,33 +142,32 @@\n   fmt.Printf(%22%25d\n- \n %22, i)%0A    %7D%0A    \n@@ -230,17 +230,16 @@\n intf(%22%25d\n- \n %22, i)%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-18_17-45-59",
+            "content": "@@ -112,16 +112,26 @@\n for \n-;a%3Eb;a--\n+i := a; i%3E= b; i++\n %7B%0A  \n@@ -150,25 +150,25 @@\n intf(%22%25d %22, \n-a\n+i\n )%0A    %7D%0A    \n@@ -191,16 +191,22 @@\n for \n-; a%3Cb ;a\n+i :=a; i%3C=b; i\n ++%7B%0A\n@@ -235,17 +235,17 @@\n (%22%25d %22, \n-a\n+i\n )%0A      \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-18_17-47-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a,&b)\n    fmt.Print(\"[ \")\nif a > b{\n    for ;a>b;a--{\n        fmt.Printf(\"%d \", a)\n    }\n    }else {\n        for ; a<b ;a++{\n            fmt.Printf(\"%d \", a)\n        }\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "17"
+        }
+    ]
+}

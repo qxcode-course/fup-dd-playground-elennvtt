@@ -7,8 +7,13 @@
         },
         {
             "label": "2026-05-12_14-18-29",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c,a int\n    fmt.Scan(&c,&a)\n    viagem := a/ (c-1)\n    if a%(c-1) !=0{\n        viagem++\n    }\n    fmt.Println(viagem)\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,23 +37,28 @@\n ) %7B%0A\n-%09\n+    \n var c,\n- \n a int%0A\n-%09\n+    \n fmt.\n@@ -69,14 +69,16 @@\n (&c,\n- \n &a)%0A\n-%09\n+    \n viag\n@@ -88,20 +88,20 @@\n := a\n- \n / (c\n- - 1)%0A%09\n+-1)%0A    \n if a\n@@ -113,28 +113,38 @@\n ) !=\n- 0 %7B%0A%09%09viagem++%0A%09%7D%0A%09\n+0%7B%0A        viagem++%0A    %7D%0A    \n fmt.\n",
             "lines": "11"
+        },
+        {
+            "label": "2026-05-18_16-47-04",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar c, a int\n\tfmt.Scan(&c, &a)\n\tviagem := a / (c - 1)\n\tif a%(c-1) != 0 {\n\t\tviagem++\n\t}\n\tfmt.Println(viagem)\n}\n",
+            "lines": "13"
         }
     ]
 }

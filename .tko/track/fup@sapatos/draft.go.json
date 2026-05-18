@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_18-18-43",
+            "content": "@@ -108,9 +108,11 @@\n if a\n-%3E\n+ %3E \n b %7B%0A\n@@ -177,17 +177,16 @@\n = a; i %3C\n-=\n  b; i++ \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-18_18-19-57",
+            "content": "@@ -245,17 +245,17 @@\n soma += \n-i\n+1\n %0A       \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-18_18-20-31",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    var soma int = 0\n    fmt.Scan(&a,&b)\n    \n    if a>b {\n        fmt.Println(\"invalido\")\n    }else{\n        for i := a; i <= b; i++ {\n            if i%2==0 && i%3 ==0 {\n                soma += i\n            }\n        }\n        fmt.Println(soma)\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}

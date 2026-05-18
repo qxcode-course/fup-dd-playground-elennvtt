@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_18-12-58",
+            "content": "@@ -47,14 +47,8 @@\n  a,b\n-, soma\n  int\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-18_18-13-28",
+            "content": " package main\nimport \"fmt\"\nfunc main() {\n  var a,b, soma int\n  fmt.Scan(&a, &b)\n    if a>b{\n        fmt.Println(\"invalido\")\n        return\n    }   \n    for i:= a; i<=b;i++{\n        if i%2==0{\n            soma+=i\n        }\n    }\n    fmt.Println(soma)\n}\n",
+            "lines": "16"
+        }
+    ]
+}
