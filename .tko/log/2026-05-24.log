@@ -252,3 +252,27 @@
 2026-05-24 22:04:04, SELF, v:1, k:fup@fatores, self:1, rate:100
 2026-05-24 22:01:13, MOVE, v:1, k:fup@fatores, mode:EDIT
 2026-05-24 22:03:57, MOVE, v:1, k:fup@fatores, mode:EDIT
+2026-05-24 22:09:49, SELF, v:1, k:fup@fatores, self:1, rate:100, study:20
+2026-05-24 22:09:55, MOVE, v:1, k:fup@sapinho, mode:PICK
+2026-05-24 22:10:22, EXEC, v:1, k:fup@sapinho, mode:FULL, rate:100
+2026-05-24 22:10:28, EXEC, v:1, k:fup@sapinho, mode:FREE
+2026-05-24 22:11:05, MOVE, v:1, k:fup@sapinho, mode:BACK
+2026-05-24 22:11:16, MOVE, v:1, k:fup@operacoes, mode:DOWN
+2026-05-24 22:11:17, MOVE, v:1, k:fup@operacoes, mode:PICK
+2026-05-24 22:11:20, EXEC, v:1, k:fup@operacoes, mode:FREE, size:5
+2026-05-24 22:11:36, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:0
+2026-05-24 22:11:54, MOVE, v:1, k:fup@operacoes, mode:BACK
+2026-05-24 22:12:03, MOVE, v:1, k:fup@tres, mode:PICK
+2026-05-24 22:12:06, EXEC, v:1, k:fup@tres, mode:FREE
+2026-05-24 22:12:34, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-05-24 22:12:37, MOVE, v:1, k:fup@tres, mode:BACK
+2026-05-24 22:12:48, MOVE, v:1, k:fup@celsius, mode:PICK
+2026-05-24 22:10:53, MOVE, v:1, k:fup@sapinho, mode:EDIT
+2026-05-24 22:11:16, MOVE, v:1, k:fup@operacoes, mode:EDIT
+2026-05-24 22:11:16, MOVE, v:1, k:fup@operacoes, mode:EDIT
+2026-05-24 22:11:36, MOVE, v:1, k:fup@operacoes, mode:EDIT
+2026-05-24 22:12:34, MOVE, v:1, k:fup@tres, mode:EDIT
+2026-05-24 22:13:06, EXEC, v:1, k:fup@celsius, mode:FREE
+2026-05-24 22:13:14, EXEC, v:1, k:fup@celsius, mode:FULL, rate:100
+2026-05-24 22:13:34, EXEC, v:1, k:fup@celsius, mode:FREE
+2026-05-24 22:14:32, MOVE, v:1, k:fup@celsius, mode:BACK
