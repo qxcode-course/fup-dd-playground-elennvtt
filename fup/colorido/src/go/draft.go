@@ -20,7 +20,6 @@ func main() {
 			continue
 		}
 
-		// céu
 		if i == 10 {
 			if N != 10 {
 				if !primeiro {
@@ -38,7 +37,6 @@ func main() {
 		fmt.Printf("%d%s", i, atual)
 		primeiro = false
 
-		// alterna o pé
 		if atual == "d" {
 			atual = "e"
 		} else {
@@ -46,5 +44,5 @@ func main() {
 		}
 	}
 
-	fmt.Print(" ]")
+	fmt.Println(" ]")
 }

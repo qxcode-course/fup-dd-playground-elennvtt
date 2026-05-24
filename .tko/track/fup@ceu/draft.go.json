@@ -67,7 +67,12 @@
         },
         {
             "label": "2026-05-24_18-16-32",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    fmt.Print(\"[ \")\n    first := true\n\n    for i := 0; i <= 10; i++{\n        if i == N{\n            continue\n        }\n        if !first {\n            fmt.Print(\" \")\n        }\n        if i == 10 {\n            fmt.Print(\"ceu\")\n        }else{\n            fmt.Print(i)\n        }\n        first=false\n            \n        }\n        fmt.Print(\" ]\")\n    }\n    \n",
+            "content": "@@ -405,10 +405,8 @@\n rint\n-ln\n (%22 %5D\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-24_20-17-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    fmt.Print(\"[ \")\n    first := true\n\n    for i := 0; i <= 10; i++{\n        if i == N{\n            continue\n        }\n        if !first {\n            fmt.Print(\" \")\n        }\n        if i == 10 {\n            fmt.Print(\"ceu\")\n        }else{\n            fmt.Print(i)\n        }\n        first=false\n            \n        }\n        fmt.Println(\" ]\")\n    }\n    \n",
             "lines": "27"
         }
     ]

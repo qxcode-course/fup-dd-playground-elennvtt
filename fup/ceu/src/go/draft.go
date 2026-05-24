@@ -22,6 +22,6 @@ func main() {
         first=false
             
         }
-        fmt.Print(" ]")
+        fmt.Println(" ]")
     }
     

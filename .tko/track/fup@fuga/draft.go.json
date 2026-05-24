@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_20-25-04",
+            "content": "@@ -102,16 +102,46 @@\n for %7B%0A%09%09\n+// anda uma posi%C3%A7%C3%A3o na dire%C3%A7%C3%A3o\n %0A%09%09pos =\n@@ -240,16 +240,18 @@\n mt.Print\n+ln\n (%22N%22)%0A%09%09\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-24_20-26-50",
+            "content": "@@ -210,18 +210,16 @@\n mt.Print\n-ln\n (%22N%22)%0A%09%09\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-24_20-27-59",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar H, P, F, D int\n\tfmt.Scan(&H, &P, &F, &D)\n\n\tpos := F\n\n\tfor {\n\t\t\n\t\tpos = (pos + D + 16) % 16\n\n\t\tif pos == H {\n\t\t\tfmt.Println(\"S\")\n\t\t\tbreak\n\t\t}\n\n\t\tif pos == P {\n\t\t\tfmt.Println(\"N\")\n\t\t\tbreak\n\t\t}\n\t}\n}\n",
+            "lines": "25"
+        }
+    ]
+}

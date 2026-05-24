@@ -17,8 +17,18 @@
         },
         {
             "label": "2026-05-24_19-22-57",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar N int\n\tvar pe string\n\n\tfmt.Scan(&N)\n\tfmt.Scan(&pe)\n\n\tatual := pe\n\tprimeiro := true\n\n\tfmt.Print(\"[ \")\n\n\tfor i := 0; i <= 10; i++ {\n\n\t\tif i == N {\n\t\t\tcontinue\n\t\t}\n\n\t\t// c\u00e9u\n\t\tif i == 10 {\n\t\t\tif N != 10 {\n\t\t\t\tif !primeiro {\n\t\t\t\t\tfmt.Print(\" \")\n\t\t\t\t}\n\t\t\t\tfmt.Print(\"ceu\")\n\t\t\t}\n\t\t\tbreak\n\t\t}\n\n\t\tif !primeiro {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\n\t\tfmt.Printf(\"%d%s\", i, atual)\n\t\tprimeiro = false\n\n\t\t// alterna o p\u00e9\n\t\tif atual == \"d\" {\n\t\t\tatual = \"e\"\n\t\t} else {\n\t\t\tatual = \"d\"\n\t\t}\n\t}\n\n\tfmt.Print(\" ]\")\n}\n",
+            "content": "@@ -198,24 +198,33 @@\n ntinue%0A%09%09%7D%0A%0A\n+%09%09// c%C3%A9u%0A\n %09%09if i == 10\n@@ -418,16 +418,34 @@\n  false%0A%0A\n+%09%09// alterna o p%C3%A9%0A\n %09%09if atu\n",
             "lines": "50"
+        },
+        {
+            "label": "2026-05-24_19-29-30",
+            "content": "@@ -492,10 +492,8 @@\n rint\n-ln\n (%22 %5D\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-05-24_20-16-12",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar N int\n\tvar pe string\n\n\tfmt.Scan(&N)\n\tfmt.Scan(&pe)\n\n\tatual := pe\n\tprimeiro := true\n\n\tfmt.Print(\"[ \")\n\n\tfor i := 0; i <= 10; i++ {\n\n\t\tif i == N {\n\t\t\tcontinue\n\t\t}\n\n\t\tif i == 10 {\n\t\t\tif N != 10 {\n\t\t\t\tif !primeiro {\n\t\t\t\t\tfmt.Print(\" \")\n\t\t\t\t}\n\t\t\t\tfmt.Print(\"ceu\")\n\t\t\t}\n\t\t\tbreak\n\t\t}\n\n\t\tif !primeiro {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\n\t\tfmt.Printf(\"%d%s\", i, atual)\n\t\tprimeiro = false\n\n\t\tif atual == \"d\" {\n\t\t\tatual = \"e\"\n\t\t} else {\n\t\t\tatual = \"d\"\n\t\t}\n\t}\n\n\tfmt.Println(\" ]\")\n}\n",
+            "lines": "48"
         }
     ]
 }
