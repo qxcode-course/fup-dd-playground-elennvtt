@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_18-00-12",
+            "content": "@@ -178,16 +178,35 @@\n         \n+fmt.Sprintln(%22c%C3%A9u%22)\n %0A       \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-24_18-01-06",
+            "content": "@@ -182,26 +182,8 @@\n     \n-fmt.Println(%22c%C3%A9u%22)\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-24_18-02-05",
+            "content": "@@ -253,66 +253,8 @@\n   %7D%0A\n-        if i != 10 %7B%0A            fmt.Print(%22 %22)%0A        %7D%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-24_18-04-07",
+            "content": "@@ -126,16 +126,24 @@\n         \n+continue\n %0A       \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-24_18-05-19",
+            "content": "@@ -69,29 +69,8 @@\n N)%0A%0A\n-    fmt.Print(%22%5B %22)%0A%0A\n     \n@@ -130,16 +130,8 @@\n     \n-continue\n %0A   \n@@ -183,14 +183,15 @@\n rint\n+ln\n (%22c%C3%A9u\n- \n %22)%0A \n@@ -229,15 +229,12 @@\n rint\n+ln\n (i\n-, %22 %22\n )%0A  \n@@ -289,9 +289,8 @@\n nt(%22\n-%5D\n  %22)%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-24_18-08-06",
+            "content": "@@ -280,20 +280,28 @@\n         \n-    \n+if i != 10 %7B\n %0A       \n@@ -305,16 +305,8 @@\n     \n-%7D%0A    %7D%0A\n     \n@@ -321,10 +321,26 @@\n t(%22%5D %22)%0A\n+        %7D%0A    %7D%0A\n %7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-24_18-10-31",
+            "content": "@@ -295,24 +295,26 @@\n       %7D%0A    \n+%7D%0A\n     fmt.Prin\n@@ -321,19 +321,10 @@\n t(%22%5D %22)%0A\n-    %7D%0A    \n+%7D\n %0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-24_18-10-52",
+            "content": "@@ -211,17 +211,17 @@\n Print(%22c\n-e\n+%C3%A9\n u %22)%0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-24_18-11-14",
+            "content": "@@ -314,17 +314,16 @@\n .Print(%22\n- \n %5D %22)%0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-24_18-11-22",
+            "content": "@@ -316,16 +316,17 @@\n rint(%22 %5D\n+ \n %22)%0A    %7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-24_18-11-28",
+            "content": "@@ -213,16 +213,17 @@\n int(%22ceu\n+ \n %22)%0A     \n@@ -314,16 +314,17 @@\n .Print(%22\n+ \n %5D%22)%0A    \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-24_18-12-12",
+            "content": "@@ -313,17 +313,16 @@\n .Print(%22\n- \n %5D%22)%0A    \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-24_18-12-19",
+            "content": "@@ -88,26 +88,8 @@\n %5B %22)\n-%0A    first := true\n %0A%0A  \n@@ -170,65 +170,8 @@\n   %7D%0A\n-        if !first %7B%0A            fmt.Print(%22 %22)%0A        %7D%0A\n     \n@@ -254,16 +254,21 @@\n .Print(i\n+, %22 %22\n )%0A      \n@@ -275,28 +275,8 @@\n   %7D%0A\n-        first=false%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-24_18-16-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    fmt.Print(\"[ \")\n    first := true\n\n    for i := 0; i <= 10; i++{\n        if i == N{\n            continue\n        }\n        if !first {\n            fmt.Print(\" \")\n        }\n        if i == 10 {\n            fmt.Print(\"ceu\")\n        }else{\n            fmt.Print(i)\n        }\n        first=false\n            \n        }\n        fmt.Print(\" ]\")\n    }\n    \n",
+            "lines": "27"
+        }
+    ]
+}

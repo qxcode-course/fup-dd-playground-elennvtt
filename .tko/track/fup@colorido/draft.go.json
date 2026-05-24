@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_19-17-15",
+            "content": "@@ -327,141 +327,8 @@\n   %7D%0A\n-        fmt.Printf(%22%25d%25s%22, i, atual)%0A        if atual == %22d%22%7B%0A            atual=%22e%22%0A        %7Delse%7B%0A            atual = %22d%22%0A        %7D%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-24_19-19-25",
+            "content": "@@ -128,16 +128,17 @@\n    for i\n+n\n  := 0; i\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-24_19-19-35",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var N in\n@@ -47,17 +47,20 @@\n r N int%0A\n-%09\n+    \n var pe s\n@@ -66,17 +66,20 @@\n string%0A%0A\n-%09\n+    \n fmt.Scan\n@@ -83,17 +83,20 @@\n can(&N)%0A\n-%09\n+    \n fmt.Scan\n@@ -102,17 +102,20 @@\n n(&pe)%0A%0A\n-%09\n+    \n atual :=\n@@ -122,46 +122,13 @@\n  pe%0A\n-%09primeiro := true%0A%0A%09fmt.Print(%22%5B %22)%0A%0A%09\n+%0A    \n for \n@@ -151,14 +151,18 @@\n  i++\n- \n %7B%0A\n-%0A%09%09\n+        \n if i\n@@ -173,36 +173,47 @@\n N %7B%0A\n-%09%09%09continue%0A%09%09%7D%0A%0A%09%09// c%C3%A9u%0A%09%09\n+            continue%0A        %7D%0A        \n if i\n@@ -218,22 +218,30 @@\n  i == 10\n- \n %7B%0A\n-%09%09%09\n+            \n if N != \n@@ -249,204 +249,130 @@\n 0 %7B%0A\n-%09%09%09%09if !primeiro %7B%0A%09%09%09%09%09fmt.Print(%22 %22)%0A%09%09%09%09%7D%0A%09%09%09%09fmt.Print(%22ceu%22)%0A%09%09%09%7D%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09if !primeiro %7B%0A%09%09%09fmt.Print(%22 %22)%0A%09%09%7D%0A%0A%09%09fmt.Printf(%22%25d%25s%22, i, atual)%0A%09%09primeiro = false%0A%0A%09%09// alterna o p%C3%A9%0A%09%09\n+                fmt.Println(%22ceu%22)%0A            %7D%0A            break%0A        %7D%0A        fmt.Printf(%22%25d%25s%22, i, atual)%0A        \n if a\n@@ -386,75 +386,85 @@\n  %22d%22\n- \n %7B%0A\n-%09%09%09\n+            \n atual\n- = \n+=\n %22e%22%0A\n-%09%09%7D \n+        %7D\n else\n- \n %7B%0A\n-%09%09%09atual = %22d%22%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Print(%22 %5D%22)\n+            atual = %22d%22%0A        %7D%0A    %7D\n %0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-24_19-22-57",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar N int\n\tvar pe string\n\n\tfmt.Scan(&N)\n\tfmt.Scan(&pe)\n\n\tatual := pe\n\tprimeiro := true\n\n\tfmt.Print(\"[ \")\n\n\tfor i := 0; i <= 10; i++ {\n\n\t\tif i == N {\n\t\t\tcontinue\n\t\t}\n\n\t\t// c\u00e9u\n\t\tif i == 10 {\n\t\t\tif N != 10 {\n\t\t\t\tif !primeiro {\n\t\t\t\t\tfmt.Print(\" \")\n\t\t\t\t}\n\t\t\t\tfmt.Print(\"ceu\")\n\t\t\t}\n\t\t\tbreak\n\t\t}\n\n\t\tif !primeiro {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\n\t\tfmt.Printf(\"%d%s\", i, atual)\n\t\tprimeiro = false\n\n\t\t// alterna o p\u00e9\n\t\tif atual == \"d\" {\n\t\t\tatual = \"e\"\n\t\t} else {\n\t\t\tatual = \"d\"\n\t\t}\n\t}\n\n\tfmt.Print(\" ]\")\n}\n",
+            "lines": "50"
+        }
+    ]
+}
