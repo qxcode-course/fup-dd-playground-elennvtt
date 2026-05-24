@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_21-05-24",
+            "content": "@@ -494,21 +494,8 @@\n     \n-        break\n %0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-24_21-05-39",
+            "content": "@@ -387,17 +387,16 @@\n geiros %3C\n-=\n  2*C %7B%0A \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-24_21-07-47",
+            "content": "@@ -390,9 +390,9 @@\n ros \n-%3E\n+%3C\n = 2*\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-24_21-07-55",
+            "content": "@@ -1,9 +1,8 @@\n-p\n package \n@@ -20,17 +20,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -34,17 +34,20 @@\n ain() %7B%0A\n-%09\n+    \n var C, M\n@@ -51,17 +51,20 @@\n , M int%0A\n-%09\n+    \n fmt.Scan\n@@ -68,14 +68,19 @@\n can(\n+%22\n &C\n+%22\n )%0A%0A\n-%09\n+    \n pass\n@@ -97,17 +97,26 @@\n  0%0A%0A\n-%09\n+    \n for %7B%0A\n-%09%09\n+        \n fmt.\n@@ -124,18 +124,24 @@\n can(&M)%0A\n-%09%09\n+        \n passagei\n@@ -152,12 +152,19 @@\n += M\n+ \n %0A%0A\n-%09%09\n+        \n if p\n@@ -178,63 +178,130 @@\n ros \n-%3E= 2*C %7B%0A%09%09%09fmt.Println(%22hora de partir%22)%0A%09%09%09break%0A%09%09%7D \n+== 0 %7B%0A            fmt.Println(%22vazio%22)%0A        %7Delse if passageiros %3C C %7B%0A            fmt.Println(%22ainda cabe%22)%0A        %7D\n else\n@@ -323,15 +323,24 @@\n  == \n-0 %7B%0A%09%09%09\n+C %7B%0A            \n fmt.\n@@ -352,20 +352,26 @@\n ln(%22\n-vazio%22)%0A%09%09%7D \n+lotado%22)%0A        %7D\n else\n@@ -390,84 +390,141 @@\n ros \n-%3C C %7B%0A%09%09%09fmt.Println(%22ainda cabe%22)%0A%09%09%7D else %7B%0A%09%09%09fmt.Println(%22lotado%22)%0A%09%09%7D%0A%09\n+%3E= 2*C %7B%0A            fmt.Println(%22lotado%22)%0A        %7Delse %7B%0A            fmt.Println(%22hora de partir%22)%0A            break%0A        %7D%0A    \n %7D%0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-24_21-08-27",
+            "content": "@@ -1,8 +1,9 @@\n+p\n package \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-24_21-08-51",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar C, M int\n\tfmt.Scan(&C)\n\n\tpassageiros := 0\n\n\tfor {\n\t\tfmt.Scan(&M)\n\t\tpassageiros += M\n\n\t\tif passageiros >= 2*C {\n\t\t\tfmt.Println(\"hora de partir\")\n\t\t\tbreak\n\t\t} else if passageiros == 0 {\n\t\t\tfmt.Println(\"vazio\")\n\t\t} else if passageiros < C {\n\t\t\tfmt.Println(\"ainda cabe\")\n\t\t} else {\n\t\t\tfmt.Println(\"lotado\")\n\t\t}\n\t}\n}\n",
+            "lines": "26"
+        }
+    ]
+}

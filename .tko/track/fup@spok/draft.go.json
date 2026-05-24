@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_21-28-56",
+            "content": "@@ -168,18 +168,8 @@\n %7D%0A%0A%09\n-return inv\n %0A%7D%0A%0A\n@@ -277,16 +277,18 @@\n mt.Print\n+ln\n (0)%0A%09%7D%0A%7D\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-24_21-29-13",
+            "content": "@@ -287,18 +287,16 @@\n mt.Print\n-ln\n (0)%0A%09%7D%0A%7D\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-24_21-29-23",
+            "content": "package main\n\nimport \"fmt\"\n\n// fun\u00e7\u00e3o que inverte o n\u00famero\nfunc inverter(n int) int {\n\tinv := 0\n\n\tfor n > 0 {\n\t\tdigito := n % 10\n\t\tinv = inv*10 + digito\n\t\tn = n / 10\n\t}\n\n\treturn inv\n}\n\nfunc main() {\n\tvar num int\n\tfmt.Scan(&num)\n\n\tif num == inverter(num) {\n\t\tfmt.Println(1)\n\t} else {\n\t\tfmt.Println(0)\n\t}\n}\n",
+            "lines": "27"
+        }
+    ]
+}

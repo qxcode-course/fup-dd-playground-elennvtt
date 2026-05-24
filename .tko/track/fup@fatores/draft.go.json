@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_22-00-39",
+            "content": "@@ -78,17 +78,8 @@\n  2%0A%09\n-cont := 0\n %0A%0A%09f\n@@ -298,16 +298,18 @@\n f(%22%25d %25d\n+%5Cn\n %22, fator\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-24_22-00-58",
+            "content": "@@ -305,16 +305,18 @@\n ntf(%22%25d \n+%25d\n %22, fator\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-24_22-01-07",
+            "content": "@@ -297,36 +297,32 @@\n %09fmt.Printf(%22%25d \n-%25d%5Cn\n %22, fator, cont)%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-24_22-03-56",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tfator := 2\n\tcont := 0\n\n\tfor n != 1 {\n\t\tif n%fator == 0 {\n\t\t\tn /= fator\n\t\t\tcont++\n\t\t} else {\n\t\t\tif cont > 0 {\n\t\t\t\tfmt.Printf(\"%d %d\\n\", fator, cont)\n\t\t\t}\n\t\t\tfator++\n\t\t\tcont = 0\n\t\t}\n\t}\n\n\t// imprime o \u00faltimo fator\n\tif cont > 0 {\n\t\tfmt.Printf(\"%d %d\\n\", fator, cont)\n\t}\n}\n",
+            "lines": "29"
+        }
+    ]
+}
