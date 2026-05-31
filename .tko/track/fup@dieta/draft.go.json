@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_13-53-51",
+            "content": "@@ -175,63 +175,6 @@\n   %7D%0A\n-    media := float64(soma) / float64(n)%0A    fmt.Printf()%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-31_13-55-23",
+            "content": "@@ -230,23 +230,8 @@\n ntf(\n-%22%25.1f%5Cn%22, media\n )%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-31_13-55-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    var soma int\n    var x int\n\n    for i := 0; i < n; i++ {\n        fmt.Scan(&x)\n        soma += x\n    }\n    media := float64(soma) / float64(n)\n    fmt.Printf(\"%.1f\\n\", media)\n}\n",
+            "lines": "16"
+        }
+    ]
+}

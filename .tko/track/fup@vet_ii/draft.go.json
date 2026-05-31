@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_13-29-23",
+            "content": "@@ -45,17 +45,16 @@\n  %7B%0A%09var \n-n\n  int%0A%09fm\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-31_13-29-30",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\t\n\tvetor := make([]int, n)\n\n\t\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vetor[i])\n\t}\n\n\t\n\tfmt.Print(\"[ \")\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Print(vetor[i], \" \")\n\t}\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "25"
+        }
+    ]
+}

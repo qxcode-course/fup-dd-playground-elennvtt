@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_13-34-38",
+            "content": "@@ -21,13 +21,8 @@\n  (%0A%09\n-%22fmt%22\n %0A)%0A%0A\n@@ -108,16 +108,27 @@\n = 0 %7B%0A%09%09\n+return %22%5B%5D%22\n %0A%09%7D%0A%0A%09re\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-05-31_13-34-52",
+            "content": "@@ -117,25 +117,30 @@\n %7B%0A%09%09\n-return %22%5B%5D%22%0A%09%7D%0A%0A%09\n+%0A%09%7D%0A%0A%09resultado := %22%5B%22\n %0A%0A%09f\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-05-31_13-35-22",
+            "content": "@@ -134,24 +134,8 @@\n %7D%0A%0A%09\n-resultado := %22%5B%22\n %0A%0A%09f\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-05-31_13-35-50",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\n// fun\u00e7\u00e3o que formata o vetor\nfunc formatarVetor(v []int) string {\n\tif len(v) == 0 {\n\t\treturn \"[]\"\n\t}\n\n\tresultado := \"[\"\n\n\tfor i := 0; i < len(v); i++ {\n\t\tresultado += fmt.Sprint(v[i])\n\n\t\t// adiciona \", \" apenas entre elementos\n\t\tif i < len(v)-1 {\n\t\t\tresultado += \", \"\n\t\t}\n\t}\n\n\tresultado += \"]\"\n\treturn resultado\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tvetor := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vetor[i])\n\t}\n\n\tfmt.Println(formatarVetor(vetor))\n}\n",
+            "lines": "39"
+        }
+    ]
+}

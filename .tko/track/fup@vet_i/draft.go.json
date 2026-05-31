@@ -12,8 +12,13 @@
         },
         {
             "label": "2026-04-14_17-54-55",
-            "content": "package main\nimport \"fmt\"\n\nfunc vetor(arr []int, sep string){\n    for i, valor := range arr {\n        if i != 0 {\n            fmt.Println(sep)\n        }\n        fmt.Printf(\"%v\", valor)\n    }\n    fmt.Print(\"\\n\")\n}\n\nfunc main() {\n var qtd int\n    fmt.Scan(&qtd)\n    var arr []int = make([]int, qtd)\n    for i:= range arr{\n        fmt.Scan(&arr[i])\n\n    }\n    vetor(arr, \"\")\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -53,20 +53,22 @@\n  string)\n- \n %7B%0A\n-%09\n+    \n for i, v\n@@ -87,18 +87,24 @@\n e arr %7B%0A\n-%09%09\n+        \n if i != \n@@ -111,11 +111,20 @@\n 0 %7B%0A\n-%09%09%09\n+            \n fmt.\n@@ -140,14 +140,26 @@\n ep)%0A\n-%09%09%7D%0A%09%09\n+        %7D%0A        \n fmt.\n@@ -178,20 +178,26 @@\n  valor)%0A\n-%09%7D%0A%09\n+    %7D%0A    \n fmt.Prin\n@@ -221,17 +221,17 @@\n ain() %7B%0A\n-%09\n+ \n var qtd \n@@ -234,17 +234,20 @@\n qtd int%0A\n-%09\n+    \n fmt.Scan\n@@ -253,17 +253,20 @@\n n(&qtd)%0A\n-%09\n+    \n var arr \n@@ -294,15 +294,17 @@\n td)%0A\n-%09\n+    \n for i\n- \n := r\n@@ -315,13 +315,18 @@\n  arr\n- \n %7B%0A\n-%09%09\n+        \n fmt.\n@@ -344,12 +344,18 @@\n %5D)%0A%0A\n-%09%7D%0A%09\n+    %7D%0A    \n veto\n",
             "lines": "23"
+        },
+        {
+            "label": "2026-05-31_13-07-09",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc vetor(arr []int, sep string) {\n\tfor i, valor := range arr {\n\t\tif i != 0 {\n\t\t\tfmt.Println(sep)\n\t\t}\n\t\tfmt.Printf(\"%v\", valor)\n\t}\n\tfmt.Print(\"\\n\")\n}\n\nfunc main() {\n\tvar qtd int\n\tfmt.Scan(&qtd)\n\tvar arr []int = make([]int, qtd)\n\tfor i := range arr {\n\t\tfmt.Scan(&arr[i])\n\n\t}\n\tvetor(arr, \"\")\n}\n",
+            "lines": "24"
         }
     ]
 }

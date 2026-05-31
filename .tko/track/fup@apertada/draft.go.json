@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_13-43-01",
+            "content": "@@ -125,19 +125,21 @@\n t.Scan(&\n-num\n+menor\n )%0A    %7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-31_13-43-20",
+            "content": "@@ -134,95 +134,12 @@\n um)%0A\n-%0A        if num %3C menor %7B%0A            menor = num%0A        %7D%0A    %7D%0A    fmt.Println(menor)\n+    %7D\n %0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-31_13-44-09",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num, menor int\n    fmt.Scan(&menor)\n\n    for i := 1; i < 5; i++ {\n        fmt.Scan(&num)\n\n        if num < menor {\n            menor = num\n        }\n    }\n    fmt.Println(menor)\n}\n",
+            "lines": "15"
+        }
+    ]
+}

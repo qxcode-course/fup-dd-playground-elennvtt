@@ -19,11 +19,15 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@for2
 - sandbox@sandbox
-- fup@if1
+- fup@string
+- fup@struct
+- fup@mat
 - fup@base
-- fup@if2
+- fup@dict
+- fup@if1
+- fup@for2
+- fup@list
 flags:
   inbox: all
   panel: skills
@@ -31,5 +35,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@celsius
-selected_index: 9
+selected: fup@repetidos
+selected_index: 52
