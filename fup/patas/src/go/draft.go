@@ -9,11 +9,11 @@ func main() {
     fmt.Scan(&n)
 
     total := 0
-    var animal string
+    animal := make([]string, n)
 
     for i := 0; i < n; i++ {
-        fmt.Scan(&animal)
-        switch animal {
+        fmt.Scan(&animal[i])
+        switch animal[i] {
         case "v", "c":
             total += 4 
         case "g":
@@ -22,8 +22,8 @@ func main() {
     }
     fmt.Println(total)
 
-    dchico := abs(chico - total)
-    dcebolinha := abs(cebolinha-total)
+    dchico := abs(total - chico)
+    dcebolinha := abs(total - cebolinha )
 
     if dchico < dcebolinha {
         fmt.Println("Chico Bento")

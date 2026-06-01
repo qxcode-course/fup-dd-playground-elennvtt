@@ -27,7 +27,17 @@
         },
         {
             "label": "2026-05-31_14-56-22",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var chico, cebolinha int\n    fmt.Scan(&chico)\n    fmt.Scan(&cebolinha)\n\n    var n int \n    fmt.Scan(&n)\n\n    total := 0\n    var animal string\n\n    for i := 0; i < n; i++ {\n        fmt.Scan(&animal)\n        switch animal {\n        case \"v\", \"c\":\n            total += 4 \n        case \"g\":\n            total += 2\n        }\n    }\n    fmt.Println(total)\n\n    dchico := abs(chico - total)\n    dcebolinha := abs(cebolinha-total)\n\n    if dchico < dcebolinha {\n        fmt.Println(\"Chico Bento\")\n    }else if dcebolinha < dchico {\n        fmt.Println(\"Cebolinha\")\n    }else {\n        fmt.Println(\"empate\")\n    }\n}\n    func abs (x int) int{\n        if x <0 {\n            return -x\n        }\n        return -x\n}\n",
+            "content": "@@ -165,35 +165,25 @@\n     \n+var \n animal \n-:= make(%5B%5D\n string\n-, n)\n %0A%0A  \n@@ -233,19 +233,16 @@\n (&animal\n-%5Bi%5D\n )%0A      \n@@ -260,11 +260,8 @@\n imal\n-%5Bi%5D\n  %7B%0A \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-01_17-21-34",
+            "content": "@@ -425,21 +425,21 @@\n abs(\n-total - chico\n+chico - total\n )%0A  \n@@ -462,16 +462,8 @@\n abs(\n-total - \n cebo\n@@ -463,24 +463,30 @@\n bs(cebolinha\n+-total\n )%0A%0A    if dc\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-01_17-23-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var chico, cebolinha int\n    fmt.Scan(&chico)\n    fmt.Scan(&cebolinha)\n\n    var n int \n    fmt.Scan(&n)\n\n    total := 0\n    animal := make([]string, n)\n\n    for i := 0; i < n; i++ {\n        fmt.Scan(&animal[i])\n        switch animal[i] {\n        case \"v\", \"c\":\n            total += 4 \n        case \"g\":\n            total += 2\n        }\n    }\n    fmt.Println(total)\n\n    dchico := abs(total - chico)\n    dcebolinha := abs(total - cebolinha)\n\n    if dchico < dcebolinha {\n        fmt.Println(\"Chico Bento\")\n    }else if dcebolinha < dchico {\n        fmt.Println(\"Cebolinha\")\n    }else {\n        fmt.Println(\"empate\")\n    }\n}\n    func abs (x int) int{\n        if x <0 {\n            return -x\n        }\n        return -x\n}\n",
             "lines": "41"
         }
     ]
